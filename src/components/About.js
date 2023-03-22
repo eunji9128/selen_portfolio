@@ -9,7 +9,10 @@ const About = () => {
             <ShadowBox>
                 <Container>
                     <Content>
-                        <h1>About me</h1>
+                        <Vr>
+                            <h1>About me</h1>
+                        </Vr>
+                        <br></br>
                         <p>I am a junior frontend developer who transitioned from a career in product management.</p>
                         <hr></hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae odit fuga ratione corrupti veniam unde laborum dolore, maxime dicta, nemo, eligendi quasi ipsam odio repudiandae iure suscipit?</p>
@@ -77,6 +80,12 @@ const Content = styled.div`
         margin-top: 32px;
         margin-bottom: 32px;
     }
+`
+
+const Vr = styled.div`
+    border: 4px solid #78BB75;
+    border-width: 0 0 0 4px;
+    padding-left: 16px;
 `
 
 const ProfileImg = styled.img`
