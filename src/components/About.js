@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 const About = () => {
     return (
@@ -15,8 +17,26 @@ const About = () => {
                     <ProfileImg src="/profile-image.jpg"></ProfileImg>
                 </Container>
                 <Container bgColor="#323232">
-                    <h1>container</h1>
-                    <Icons></Icons>
+                    <IconBox>
+                        <FontAwesomeIcon icon={brands("square-js")} size="6x" style={{color: "#ffffff",}} />
+                        <h4>JavaScript</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
+                    </IconBox>
+                    <IconBox>
+                        <FontAwesomeIcon icon={brands("react")} size="6x" style={{color: "#ffffff",}} />
+                        <h4>React</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
+                    </IconBox>
+                    <IconBox>
+                        <FontAwesomeIcon icon={brands("html5")} size="6x" style={{color: "#ffffff",}} />
+                        <h4>HTML</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
+                    </IconBox>
+                    <IconBox>
+                        <FontAwesomeIcon icon={brands("css3-alt")} size="6x" style={{color: "#ffffff",}} />
+                        <h4>CSS</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
+                    </IconBox>
                 </Container>
             </ShadowBox>
         </Background>
@@ -44,7 +64,7 @@ const Container = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: ${props => props.justifyContent || "center"};
     background-color: ${props => props.bgColor || "white"};
 `
 
@@ -65,8 +85,11 @@ const ProfileImg = styled.img`
     margin: 8%;
 `
 
-const Icons = styled.div`
-
+const IconBox = styled.div`
+    width: 15%;
+    text-align: center;
+    color: white;
+    margin: 4% 3% 4% 3%;
 `
 
 export default About
