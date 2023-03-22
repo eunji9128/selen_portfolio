@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Contact from "./Contact";
 
 const Features = () => {
     return (
@@ -21,6 +22,7 @@ const Features = () => {
                     <img src="/main-background.jpg" width="25%"/>
                     <img src="/main-background.jpg" width="25%"/>
                 </Container>
+                <Contact />
             </ShadowBox>
         </Background>
     )
@@ -40,6 +42,7 @@ const ShadowBox = styled.div`
     width: 90vw;
     height: 100%;
     box-shadow: 0px 0px 30px grey;
+    margin: 0;
 `
 
 const Container = styled.div`
@@ -49,10 +52,6 @@ const Container = styled.div`
     background-color: ${props => props.bgColor || "white"};
     margin: ${props => props.margin || "0"};
     flex-direction: ${props => props.direction || "row"};
-
-    img {
-        // margin: 4px;
-    }
 
     p {
         text-align: start;
