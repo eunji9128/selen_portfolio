@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { brands, solid } from '@fortawesome/fontawesome-svg-core/import.macro';
+import PicCarousel from "./PicCarousel";
 
 const About = () => {
     return (
@@ -21,7 +22,10 @@ const About = () => {
                             <p>Download CV</p>
                         </Button>
                     </Content>
-                    <ProfileImg src="/profile-image.jpg"></ProfileImg>
+                    <Box>
+                        <PicCarousel />
+                    </Box>
+                    {/* <ProfileImg src="/profile-image.jpg"></ProfileImg> */}
                 </Container>
                 <Container bgColor="#323232">
                     <IconBox>
@@ -115,6 +119,10 @@ const Button = styled.button`
     background-color: #323232;
     border: 1px solid grey;
     margin-top: 4%;
+`
+
+const Box = styled.div`
+    width: 35%;
 `
 
 export default About
