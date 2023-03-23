@@ -16,6 +16,10 @@ const About = () => {
                         <p>I am a junior frontend developer who transitioned from a career in product management.</p>
                         <hr></hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae odit fuga ratione corrupti veniam unde laborum dolore, maxime dicta, nemo, eligendi quasi ipsam odio repudiandae iure suscipit?</p>
+                        <Button>
+                            <FontAwesomeIcon icon={solid("download")} style={{color: "#ffffff",}} />
+                            <p>Download CV</p>
+                        </Button>
                     </Content>
                     <ProfileImg src="/profile-image.jpg"></ProfileImg>
                 </Container>
@@ -99,6 +103,18 @@ const IconBox = styled.div`
     text-align: center;
     color: white;
     margin: 4% 3% 4% 3%;
+`
+
+const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #323232;
+    border: 1px solid grey;
+    margin-top: 4%;
 `
 
 export default About
