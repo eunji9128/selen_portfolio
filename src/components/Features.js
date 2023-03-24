@@ -13,14 +13,30 @@ const Features = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae odit fuga ratione corrupti veniam unde laborum dolore, maxime dicta, nemo, eligendi quasi ipsam odio repudiandae iure suscipit?</p>
                 </Container>
                 <Container margin="0 0 4% 0" style={{flexWrap: "wrap"}}>
-                    <img src="/main-background.jpg" width="25%"/>
-                    <img src="/main-background.jpg" width="25%"/>
-                    <img src="/main-background.jpg" width="25%"/>
-                    <img src="/main-background.jpg" width="25%"/>
-                    <img src="/main-background.jpg" width="25%"/>
-                    <img src="/main-background.jpg" width="25%"/>
-                    <img src="/main-background.jpg" width="25%"/>
-                    <img src="/main-background.jpg" width="25%"/>
+                    <ImgLink href="https://drive.google.com/file/d/1zXo_9ZDs7ciUUylfmFpamN2zorCkqcQK/view?usp=share_link">
+                        <img src="/feature1.png" alt="PM portfolio"/>
+                    </ImgLink>
+                    <ImgLink href="https://eunji9128.github.io/">
+                        <img src="/feature2.png" alt="React shopping-mall demo"/>
+                    </ImgLink>
+                    <ImgLink href="https://eunji9128.github.io/dm_w_LandingPage/">
+                        <img src="/feature3.png" alt="Landing page demo"/>
+                    </ImgLink>
+                    <ImgLink href="https://eunji9128.github.io/dm_w_SNSprofile/">
+                        <img src="/feature4.png" alt="SNS profile page demo"/>
+                    </ImgLink>
+                    <ImgLink href="#">
+                        <Dummy>To be updated</Dummy>
+                    </ImgLink>
+                    <ImgLink href="#">
+                        <Dummy>To be updated</Dummy>
+                    </ImgLink>
+                    <ImgLink href="#">
+                        <Dummy>To be updated</Dummy>
+                    </ImgLink>
+                    <ImgLink href="#">
+                        <Dummy>To be updated</Dummy>
+                    </ImgLink>
                 </Container>
                 <Contact />
             </ShadowBox>
@@ -62,6 +78,23 @@ const Vr = styled.div`
     border: 4px solid #78BB75;
     border-width: 0 0 0 4px;
     padding-left: 16px;
+`
+
+const ImgLink = styled.a`
+    width: 25%;
+    height: 15vw;
+    object-fit: cover;
+`
+
+const Dummy = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #323232;
+    box-shadow: inset 0px 0px 3px rgba(200, 200, 200, 0.3);
+    color: #AAAAAA;
 `
 
 export default Features

@@ -11,7 +11,9 @@ const Contact = () => {
                     <h1>Contact</h1>
                     <p>+82-10-6212-8912</p>
                     <p>eunji9128@gmail.com</p>
-                    <FontAwesomeIcon icon={brands("square-github")} size="3x" style={{color: "#000000",}} />
+                    <a href="https://github.com/eunji9128">
+                        <FontAwesomeIcon icon={brands("square-github")} size="3x" style={{color: "#000000",}} />
+                    </a>
                     <FontAwesomeIcon icon={solid("envelope")} size="3x" style={{color: "#000000",}} />
                 </Container>
             </Vr>
