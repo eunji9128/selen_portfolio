@@ -17,14 +17,16 @@ const About = () => {
                         <p>I am a junior frontend developer who transitioned from a career in product management.</p>
                         <hr></hr>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae odit fuga ratione corrupti veniam unde laborum dolore, maxime dicta, nemo, eligendi quasi ipsam odio repudiandae iure suscipit?</p>
-                        <Button>
-                            <FontAwesomeIcon icon={solid("download")} style={{color: "#ffffff",}} />
-                            <p>Download CV</p>
-                        </Button>
+                        <a href="https://drive.google.com/file/d/1fclqLoSyBn4GXptnGpsZMCXCUTE2FmfZ/view?usp=share_link">
+                            <Button>
+                                <FontAwesomeIcon icon={solid("download")} style={{color: "#ffffff",}} />
+                                <p>Download CV</p>
+                            </Button>
+                        </a>
                     </Content>
-                    <Box>
+                    <CarouselBox>
                         <PicCarousel />
-                    </Box>
+                    </CarouselBox>
                     {/* <ProfileImg src="/profile-image.jpg"></ProfileImg> */}
                 </Container>
                 <Container bgColor="#323232">
@@ -118,10 +120,10 @@ const Button = styled.button`
     color: white;
     background-color: #323232;
     border: 1px solid grey;
-    margin-top: 4%;
+    margin-top: 8%;
 `
 
-const Box = styled.div`
+const CarouselBox = styled.div`
     width: 35%;
 `
 
