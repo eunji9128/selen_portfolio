@@ -36,6 +36,10 @@ const Post = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1000px) {
+        height: 70vw;
+    }
 `
 
 export default PicCarousel

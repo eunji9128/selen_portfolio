@@ -78,12 +78,23 @@ const Vr = styled.div`
     border: 4px solid #78BB75;
     border-width: 0 0 0 4px;
     padding-left: 16px;
+
+    @media screen and (max-width: 1000px) {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
 `
 
 const ImgLink = styled.a`
     width: 25%;
     height: 15vw;
     object-fit: cover;
+
+    @media screen and (max-width: 1000px) {
+        width: 50%;
+        height: 30vw;
+    }
 `
 
 const Dummy = styled.div`

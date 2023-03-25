@@ -36,6 +36,13 @@ const Vr = styled.div`
     border: 4px solid #78BB75;
     border-width: 0 0 0 4px;
     padding-left: 16px;
+
+    @media screen and (max-width: 1000px) {
+        
+        h1 {
+            font-size: 1.5em;
+        }
+    }
 `
 
 export default Contact

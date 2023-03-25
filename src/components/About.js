@@ -16,7 +16,10 @@ const About = () => {
                         <br></br>
                         <p>I am a junior frontend developer who transitioned from a career in product management.</p>
                         <hr></hr>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae odit fuga ratione corrupti veniam unde laborum dolore, maxime dicta, nemo, eligendi quasi ipsam odio repudiandae iure suscipit?</p>
+                        <p>
+                            반도체, 자율 주행 로봇 배달앱 분야에서 PM 업무를 하다, 현재는 주니어 프론트엔드 개발자로 전향한 양은지입니다. <br />
+                            HTML/CSS, JS 외에 React Framework를 이용해 반응형 페이지, 쇼핑몰, SNS page 데모 등을 개발하고 있습니다.
+                        </p>
                         <a href="https://drive.google.com/file/d/1fclqLoSyBn4GXptnGpsZMCXCUTE2FmfZ/view?usp=share_link">
                             <Button>
                                 <FontAwesomeIcon icon={solid("download")} style={{color: "#ffffff",}} />
@@ -24,9 +27,9 @@ const About = () => {
                             </Button>
                         </a>
                     </Content>
-                    <Box>
+                    <CarouselBox>
                         <PicCarousel />
-                    </Box>
+                    </CarouselBox>
                     {/* <ProfileImg src="/profile-image.jpg"></ProfileImg> */}
                 </Container>
                 <Container bgColor="#323232">
@@ -79,6 +82,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: ${props => props.justifyContent || "center"};
     background-color: ${props => props.bgColor || "white"};
+    flex-wrap: wrap;
 `
 
 const Content = styled.div`
@@ -90,18 +94,28 @@ const Content = styled.div`
         margin-top: 32px;
         margin-bottom: 32px;
     }
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+        
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
 `
 
 const Vr = styled.div`
     border: 4px solid #78BB75;
     border-width: 0 0 0 4px;
     padding-left: 16px;
-`
 
-const ProfileImg = styled.img`
-    // src: "/profile-image.jpg";
-    width: 20%;
-    margin: 8%;
+    @media screen and (max-width: 1000px) {
+        h1 {
+            font-size: 1.5em;
+        }
+    }
 `
 
 const IconBox = styled.div`
@@ -109,6 +123,10 @@ const IconBox = styled.div`
     text-align: center;
     color: white;
     margin: 4% 3% 4% 3%;
+
+    @media screen and (max-width: 1000px) {
+        width: 30%;
+    }
 `
 
 const Button = styled.button`
@@ -123,8 +141,12 @@ const Button = styled.button`
     margin-top: 4%;
 `
 
-const Box = styled.div`
+const CarouselBox = styled.div`
     width: 35%;
+
+    @media screen and (max-width: 1000px) {
+        width: 80%;
+    }
 `
 
 export default About
