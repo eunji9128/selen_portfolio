@@ -15,15 +15,19 @@ const Features = () => {
                 <Container margin="0 0 4% 0" style={{flexWrap: "wrap"}}>
                     <ImgLink href="https://drive.google.com/file/d/1zXo_9ZDs7ciUUylfmFpamN2zorCkqcQK/view?usp=share_link">
                         <img src="/feature1.png" alt="PM portfolio"/>
+                        <p>PM Portfolio</p>
                     </ImgLink>
                     <ImgLink href="https://eunji9128.github.io/">
                         <img src="/feature2.png" alt="React shopping-mall demo"/>
+                        <p>shopping mall demo</p>
                     </ImgLink>
                     <ImgLink href="https://eunji9128.github.io/dm_w_LandingPage/">
                         <img src="/feature3.png" alt="Landing page demo"/>
+                        <p>Landing page demo</p>
                     </ImgLink>
                     <ImgLink href="https://eunji9128.github.io/dm_w_SNSprofile/">
                         <img src="/feature4.png" alt="SNS profile page demo"/>
+                        <p>SNS profile demo</p>
                     </ImgLink>
                     <ImgLink href="#">
                         <Dummy>To be updated</Dummy>
@@ -87,9 +91,33 @@ const Vr = styled.div`
 `
 
 const ImgLink = styled.a`
+    position: relative;
     width: 25%;
     height: 15vw;
-    object-fit: cover;
+    // object-fit: cover;
+    overflow: hidden;
+    
+    p {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        left: 0;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &:hover {
+        filter: brightness(0.8);
+        transition: 0.2s;
+
+        p {
+            display: inline;
+        }
+    }
+
 
     @media screen and (max-width: 1000px) {
         width: 50%;
