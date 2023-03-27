@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/selen_portfolio/static/css/main.c06d0fb8.css",
+    "main.js": "/selen_portfolio/static/js/main.be4aba60.js",
+    "static/js/787.2eff7cea.chunk.js": "/selen_portfolio/static/js/787.2eff7cea.chunk.js",
+    "index.html": "/selen_portfolio/index.html",
+    "main.c06d0fb8.css.map": "/selen_portfolio/static/css/main.c06d0fb8.css.map",
+    "main.be4aba60.js.map": "/selen_portfolio/static/js/main.be4aba60.js.map",
+    "787.2eff7cea.chunk.js.map": "/selen_portfolio/static/js/787.2eff7cea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c06d0fb8.css",
+    "static/js/main.be4aba60.js"
+  ]
+}
