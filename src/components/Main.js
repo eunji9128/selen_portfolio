@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+
 
 const Main = () => {
     return (
@@ -66,4 +67,4 @@ const Title = styled.div`
     justify-content: center;
 `
 
-export default Main
+export default Main;
