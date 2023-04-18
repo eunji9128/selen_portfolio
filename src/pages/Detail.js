@@ -1,18 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import projectData from "../data/projectData";
+import { useParams } from "react-router";
 
 const Detail = function () {
+    let {id} = useParams();
+    id = parseInt(id);
     return (
         <Background>
-            <h1>{projectData[0].name}</h1>
+            <h1>{projectData[id].name}</h1>
             <Container>
-                <TitleImg></TitleImg>
+                <TitleImg id={id}></TitleImg>
             </Container>
             <Container>
                 <hr />
                 <h3>About Project</h3>
-                <p>{projectData[0].summary}</p>
+                <p>{projectData[id].summary}</p>
             </Container>
             <Container>
                 <hr />
@@ -20,7 +23,7 @@ const Detail = function () {
                 <p>해당 프로젝트에서 사용한 언어, 프레임 워크 및 패키지</p>
                 <ul>
                     {
-                        projectData[0].tech.map((data, i) => {
+                        projectData[id].tech.map((data, i) => {
                             return (
                                 <li>{data}</li>
                             )
@@ -31,7 +34,7 @@ const Detail = function () {
             <Container>
                 <hr />
                 <h3>Resources</h3>
-                <p>The project is online at <a href={projectData[0].resource}>{projectData[0].resource}</a></p>
+                <p>The project is online at <a href={projectData[id].resource}>{projectData[id].resource}</a></p>
             </Container>
         </Background>
     )
@@ -73,7 +76,7 @@ const Container = styled.div`
 const TitleImg = styled.div`
     width: 100%;
     height: 60vh;
-    background-image: url("${process.env.PUBLIC_URL}/feature2.png");
+    background-image: url("${process.env.PUBLIC_URL}/feature${props => props.id}.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

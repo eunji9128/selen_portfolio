@@ -19,7 +19,7 @@ const routes = [
     element: <App />,
   },
   {
-    path: "/detail",
+    path: "/detail/:id",
     element: <Detail />,
   }
 ];
