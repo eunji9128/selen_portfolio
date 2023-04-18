@@ -14,19 +14,19 @@ const Features = () => {
                 </Container>
                 <Container margin="0 0 4% 0" style={{flexWrap: "wrap"}}>
                     <ImgLink href="https://drive.google.com/file/d/1zXo_9ZDs7ciUUylfmFpamN2zorCkqcQK/view?usp=share_link">
-                        <img src="/feature1.png" alt="PM portfolio"/>
+                        <img src="./feature1.png" alt="PM portfolio"/>
                         <p>PM Portfolio</p>
                     </ImgLink>
                     <ImgLink href="https://eunji9128.github.io/">
-                        <img src="/feature2.png" alt="React shopping-mall demo"/>
+                        <img src="./feature2.png" alt="React shopping-mall demo"/>
                         <p>shopping mall demo</p>
                     </ImgLink>
                     <ImgLink href="https://eunji9128.github.io/dm_w_LandingPage/">
-                        <img src="/feature3.png" alt="Landing page demo"/>
+                        <img src="./feature3.png" alt="Landing page demo"/>
                         <p>Landing page demo</p>
                     </ImgLink>
                     <ImgLink href="https://eunji9128.github.io/dm_w_SNSprofile/">
-                        <img src="/feature4.png" alt="SNS profile page demo"/>
+                        <img src="./feature4.png" alt="SNS profile page demo"/>
                         <p>SNS profile demo</p>
                     </ImgLink>
                     <ImgLink href="#">

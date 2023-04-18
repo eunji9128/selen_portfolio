@@ -16,12 +16,12 @@ const PicCarousel = () => {
 
     return (
         <Carousel autoPlay={false} animation="slide">
-            <Post Src="/carousel-img1.jpg"></Post>
-            <Post Src="/carousel-img2.png"></Post>
-            <Post Src="/carousel-img3.jpg"></Post>
-            <Post Src="/carousel-img4.jpg"></Post>
-            <Post Src="/carousel-img5.jpg"></Post>
-            <Post Src="/carousel-img6.jpg"></Post>
+            <Post Src="./carousel-img1.jpg"></Post>
+            <Post Src="./carousel-img2.png"></Post>
+            <Post Src="./carousel-img3.jpg"></Post>
+            <Post Src="./carousel-img4.jpg"></Post>
+            <Post Src="./carousel-img5.jpg"></Post>
+            <Post Src="./carousel-img6.jpg"></Post>
             {/* <img src="/carousel-img1.jpg" width="100%" />
             <img src="/carousel-img2.png" width="100%" />
             <img src="/carousel-img3.jpg" width="100%" /> */}
