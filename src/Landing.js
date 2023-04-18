@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import MoonAnime from "./components/MoonAnime";
 
 const Landing = function () {
     return (
@@ -8,8 +9,8 @@ const Landing = function () {
             <Container>
                 <h1>WELCOME</h1>
                 <Start>
-                    🌒🌓🌔🌕
-                    <Link to="/home"><p>click me!</p></Link>
+                    <MoonAnime />
+                    <StyledLink to="/home"><p>click me!</p></StyledLink>
                 </Start>
             </Container>
         </Background>
@@ -36,15 +37,6 @@ const Container = styled.div`
     text-shadow: 1px 5px 20px #d295ed;
 `
 
-const StyledBtn = styled.button`
-    width: 20vw;
-    height: 10vh;
-    background-color: white;
-    opacity: 0.5;
-    border: none;
-    border-radius: 10px;
-`
-
 const Start = styled.span`
     text-align: right;
     margin: 0;
@@ -56,5 +48,15 @@ const Start = styled.span`
         text-decoration: #dcb8f6 wavy underline 4px;
     }
 `
+
+const StyledLink = styled(Link)`
+    &:any-link {
+        text-decoration: none;
+    }
+`
+
+
+
+
 
 export default Landing
