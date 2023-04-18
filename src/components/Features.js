@@ -17,7 +17,7 @@ const Features = () => {
                         <img src="./feature1.png" alt="PM portfolio"/>
                         <p>PM Portfolio</p>
                     </ImgLink>
-                    <ImgLink href="https://eunji9128.github.io/">
+                    <ImgLink href="./detail">
                         <img src="./feature2.png" alt="React shopping-mall demo"/>
                         <p>shopping mall demo</p>
                     </ImgLink>

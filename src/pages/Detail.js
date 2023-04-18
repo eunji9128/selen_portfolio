@@ -1,31 +1,37 @@
 import React from "react";
 import styled from "styled-components";
+import projectData from "../data/projectData";
 
 const Detail = function () {
     return (
         <Background>
-            <h1>Project Title</h1>
-            <p>project summary blah</p>
+            <h1>{projectData[0].name}</h1>
             <Container>
                 <TitleImg></TitleImg>
             </Container>
             <Container>
+                <hr />
                 <h3>About Project</h3>
-                <p>project details blah blah</p>
+                <p>{projectData[0].summary}</p>
             </Container>
             <Container>
+                <hr />
                 <h3>Technical Sheet</h3>
-                <p>technical sheet blah blah</p>
+                <p>해당 프로젝트에서 사용한 언어, 프레임 워크 및 패키지</p>
                 <ul>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
+                    {
+                        projectData[0].tech.map((data, i) => {
+                            return (
+                                <li>{data}</li>
+                            )
+                        })
+                    }
                 </ul>
             </Container>
             <Container>
+                <hr />
                 <h3>Resources</h3>
-                <p>The project is online at ~~~</p>
+                <p>The project is online at <a href={projectData[0].resource}>{projectData[0].resource}</a></p>
             </Container>
         </Background>
     )
@@ -33,29 +39,45 @@ const Detail = function () {
 
 const Background = styled.div`
     width: 100vw;
-    height: 100vh;
-    padding: 20px;
+    height: 100%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #dcb8f6;
+    background: linear-gradient(#2e80e9, #776ce7, #2f80e9);
+    color: #ffffff;
+
+    h1 {
+        font-size: 2.5em;
+    }
 `
 
 const Container = styled.div`
     width: 60vw;
-    height: 80vh;
-    background-color: #ffffff;
+    height: 80%;
+    // background-color: #ffffff;
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 16px;
+    }
+
+    p, li, a {
+        font-size: 1.2em;
+        color: #c0d2f9;
+    }
 `
 
 const TitleImg = styled.div`
     width: 100%;
     height: 60vh;
-    background-image: url("${process.env.PUBLIC_URL}/feature1.png");
+    background-image: url("${process.env.PUBLIC_URL}/feature2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 10px;
 
 `
 
