@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import MoonAnime from "./components/MoonAnime";
+import MoonAnime from "../components/MoonAnime";
 
 const Landing = function () {
     return (
@@ -54,9 +54,5 @@ const StyledLink = styled(Link)`
         text-decoration: none;
     }
 `
-
-
-
-
 
 export default Landing
