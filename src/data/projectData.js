@@ -2,7 +2,7 @@ let projectData = [
     {
         "id": 0,
         "name": "robot delivery app - personal project",
-        "summary": "로봇 배달 앱 MVP 협업 프로젝트 프로덕트 매니징",
+        "summary": "뉴빌리티 - 로봇 배달 앱 MVP TF 프로덕트 매니징",
         "tech": [
             "Figma",
             "Axure",
@@ -14,7 +14,7 @@ let projectData = [
     {
         "id": 1,
         "name": "shoes online mall - personal project",
-        "summary": "개인 프로젝트로 진행한 온라인 신발 판매 웹 사이트 개발",
+        "summary": "개인 프로젝트 - 온라인 신발 판매 웹 사이트 개발",
         "tech": [
             "JavaScript",
             "React",
@@ -30,7 +30,7 @@ let projectData = [
     {
         "id": 2,
         "name": "Responsive Landing Page - personal project",
-        "summary": "개인 프로젝트로 진행한 반응형 랜딩 페이지 개발",
+        "summary": "개인 프로젝트 - 반응형 랜딩 페이지 개발",
         "tech": [
             "JavaScript",
             "HTML5",
@@ -42,7 +42,7 @@ let projectData = [
     {
         "id": 3,
         "name": "Responsive SNS Profile Page - personal project",
-        "summary": "개인 프로젝트로 진행한 반응형 SNS 프로파일 페이지 개발",
+        "summary": "개인 프로젝트 - 반응형 SNS 프로파일 페이지 개발",
         "tech": [
             "JavaScript",
             "HTML5",
