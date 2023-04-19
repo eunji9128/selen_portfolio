@@ -15,6 +15,7 @@ const Contact = () => {
                         <FontAwesomeIcon icon={brands("square-github")} size="3x" style={{color: "#000000",}} />
                     </a>
                     <FontAwesomeIcon icon={solid("envelope")} size="3x" style={{color: "#000000",}} />
+                    {/* 클릭 시 이메일 전송 기능 구현 예정 */}
                 </Container>
             </Vr>
         </Container>
@@ -33,7 +34,7 @@ const Container = styled.div`
 
 const Vr = styled.div`
     width: 90vw;
-    border: 4px solid #78BB75;
+    border: 4px solid #d295ed;
     border-width: 0 0 0 4px;
     padding-left: 16px;
 

@@ -79,7 +79,7 @@ const Container = styled.div`
 `
 
 const Vr = styled.div`
-    border: 4px solid #78BB75;
+    border: 4px solid #d295ed;
     border-width: 0 0 0 4px;
     padding-left: 16px;
 
@@ -131,9 +131,9 @@ const Dummy = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #323232;
+    background: linear-gradient(#d7bbe8, #d295ed);
     box-shadow: inset 0px 0px 3px rgba(200, 200, 200, 0.3);
-    color: #AAAAAA;
+    color: #ffffff;
 `
 
 export default Features

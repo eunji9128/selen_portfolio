@@ -60,7 +60,7 @@ const Title = styled.div`
     display: flex;
     width: 50%;
     height: 20%;
-    border: 2px solid #78BB75;
+    border: 2px solid #d295ed;
     font-size: 2vw;
     margin-bottom: 4%;
     align-items: center;
