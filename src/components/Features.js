@@ -13,20 +13,20 @@ const Features = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae odit fuga ratione corrupti veniam unde laborum dolore, maxime dicta, nemo, eligendi quasi ipsam odio repudiandae iure suscipit?</p>
                 </Container>
                 <Container margin="0 0 4% 0" style={{flexWrap: "wrap"}}>
-                    <ImgLink href="https://drive.google.com/file/d/1zXo_9ZDs7ciUUylfmFpamN2zorCkqcQK/view?usp=share_link">
-                        <img src="./feature1.png" alt="PM portfolio"/>
+                    <ImgLink href="./detail/0">
+                        <img src="./feature0.png" alt="PM portfolio"/>
                         <p>PM Portfolio</p>
                     </ImgLink>
-                    <ImgLink href="https://eunji9128.github.io/">
-                        <img src="./feature2.png" alt="React shopping-mall demo"/>
+                    <ImgLink href="./detail/1">
+                        <img src="./feature1.png" alt="React shopping-mall demo"/>
                         <p>shopping mall demo</p>
                     </ImgLink>
-                    <ImgLink href="https://eunji9128.github.io/dm_w_LandingPage/">
-                        <img src="./feature3.png" alt="Landing page demo"/>
+                    <ImgLink href="./detail/2">
+                        <img src="./feature2.png" alt="Landing page demo"/>
                         <p>Landing page demo</p>
                     </ImgLink>
-                    <ImgLink href="https://eunji9128.github.io/dm_w_SNSprofile/">
-                        <img src="./feature4.png" alt="SNS profile page demo"/>
+                    <ImgLink href="./detail/3">
+                        <img src="./feature3.png" alt="SNS profile page demo"/>
                         <p>SNS profile demo</p>
                     </ImgLink>
                     <ImgLink href="#">
@@ -79,7 +79,7 @@ const Container = styled.div`
 `
 
 const Vr = styled.div`
-    border: 4px solid #78BB75;
+    border: 4px solid #d295ed;
     border-width: 0 0 0 4px;
     padding-left: 16px;
 
@@ -131,9 +131,9 @@ const Dummy = styled.div`
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #323232;
+    background: linear-gradient(#d7bbe8, #d295ed);
     box-shadow: inset 0px 0px 3px rgba(200, 200, 200, 0.3);
-    color: #AAAAAA;
+    color: #ffffff;
 `
 
 export default Features

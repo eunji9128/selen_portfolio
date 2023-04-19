@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Landing from './Landing';
+import Landing from './pages/Landing';
+import Detail from './pages/Detail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const basename = process.env.PUBLIC_URL;
@@ -16,6 +17,10 @@ const routes = [
   {
     path: "/home",
     element: <App />,
+  },
+  {
+    path: "/detail/:id",
+    element: <Detail />,
   }
 ];
 

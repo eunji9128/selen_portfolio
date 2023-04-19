@@ -32,26 +32,22 @@ const About = () => {
                     </CarouselBox>
                     {/* <ProfileImg src="/profile-image.jpg"></ProfileImg> */}
                 </Container>
-                <Container bgColor="#323232">
+                <Container bgColor="linear-gradient(#d7bbe8, #d295ed)">
                     <IconBox>
                         <FontAwesomeIcon icon={brands("square-js")} size="6x" style={{color: "#ffffff",}} />
                         <h4>JavaScript</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
                     </IconBox>
                     <IconBox>
                         <FontAwesomeIcon icon={brands("react")} size="6x" style={{color: "#ffffff",}} />
                         <h4>React</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
                     </IconBox>
                     <IconBox>
                         <FontAwesomeIcon icon={brands("html5")} size="6x" style={{color: "#ffffff",}} />
                         <h4>HTML</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
                     </IconBox>
                     <IconBox>
                         <FontAwesomeIcon icon={brands("css3-alt")} size="6x" style={{color: "#ffffff",}} />
                         <h4>CSS</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, id? Quam recusandae</p>
                     </IconBox>
                 </Container>
             </ShadowBox>
@@ -81,7 +77,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: ${props => props.justifyContent || "center"};
-    background-color: ${props => props.bgColor || "white"};
+    background: ${props => props.bgColor || "white"};
     flex-wrap: wrap;
 `
 
@@ -107,7 +103,7 @@ const Content = styled.div`
 `
 
 const Vr = styled.div`
-    border: 4px solid #78BB75;
+    border: 4px solid #d295ed;
     border-width: 0 0 0 4px;
     padding-left: 16px;
 
@@ -122,7 +118,7 @@ const IconBox = styled.div`
     width: 15%;
     text-align: center;
     color: white;
-    margin: 4% 3% 4% 3%;
+    margin: 2% 3% 2% 3%;
 
     @media screen and (max-width: 1000px) {
         width: 30%;
@@ -136,9 +132,14 @@ const Button = styled.button`
     width: 150px;
     height: 50px;
     color: white;
-    background-color: #323232;
-    border: 1px solid grey;
+    background-color: #d295ed;
+    border: none;
     margin-top: 4%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e8bedc;
+    }
 `
 
 const CarouselBox = styled.div`

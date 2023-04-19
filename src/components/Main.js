@@ -45,7 +45,7 @@ const MainLayout = styled.div`
     display: flex;
     width: 90vw;
     height: 40vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${process.env.PUBLIC_URL}/main-background3.jpg");
+    background-image: linear-gradient(rgba(192, 210, 249, 0.5), rgba(210, 149, 237, 0.5)), url("${process.env.PUBLIC_URL}/main-background3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -60,7 +60,7 @@ const Title = styled.div`
     display: flex;
     width: 50%;
     height: 20%;
-    border: 2px solid #78BB75;
+    border: 2px solid #d295ed;
     font-size: 2vw;
     margin-bottom: 4%;
     align-items: center;
